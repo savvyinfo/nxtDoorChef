@@ -53,7 +53,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '15px'
+    marginTop: '15px',
+    borderRadius: '0'
   }
 };
 

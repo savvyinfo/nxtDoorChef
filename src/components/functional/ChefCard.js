@@ -25,7 +25,8 @@ export default (props) => {
 const styles = {
   containerStyle: {
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-    marginTop: '15px'
+    marginTop: '15px',
+      borderRadius: '0'
   },
   contentStyle: {
     height: '150px'

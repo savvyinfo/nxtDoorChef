@@ -95,7 +95,8 @@ const styles = {
   containerStyle: {
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     marginTop: '15px',
-    minHeight: '250px'
+    minHeight: '250px',
+    borderRadius: '0'
   },
   cardImage: {
     height: '200px'
