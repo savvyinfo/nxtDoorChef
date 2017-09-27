@@ -1,4 +1,23 @@
-li:hover {
-    background-color: #eee;
+/*ul, li, .list-group, .list-group-item {*/
+    /*border-radius: 0;*/
+    /*border: none;*/
+    /*mask-border: none;*/
+/*}*/
+
+/*.listStyle:hover {*/
+    /*background-color: #edba1f;*/
+    /*cursor: pointer;*/
+/*}*/
+
+li {
+    background-color: #ed9421;
+}
+
+li:hover, li:focus {
+    background-color: #edba1f;
     cursor: pointer;
+}
+
+hr {
+    background-color: #fff;
 }

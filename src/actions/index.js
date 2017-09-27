@@ -10,7 +10,7 @@ export const SEARCH = 'SEARCH';
 export const SEARCH_RESULT = 'SEARCH_RESULT';
 
 export const getChefs = () => {
-  const chefs = axios.get('https://nxtdoorchef_react.com/api/chef')
+  const chefs = axios.get('https://nxtdoorchef.com/api/chef')
     .then(resp => resp.data.data);
 
   return {

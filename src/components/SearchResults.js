@@ -30,14 +30,14 @@ class SearchResults extends React.Component {
       <div>
         <Navbar />
         <div className="row">
-          <div className="col-12 col-md-6">
-            <div className="card" style={styles.headerStyle}>
-              <h1>Search Results</h1>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="card" style={styles.headerStyle}>
-              <h1>Map</h1>
+          <div className="col-12">
+            <div className="card" style={styles.headerTransparentStyle}>
+              <div style={styles.titleContainerSmallStyle}>
+              </div>
+              <div style={styles.titleContainerStyle}>
+                <span className="subTitle text-center"><span className="headTitle">CHEFS NEARBY</span><br />See who's cooking around you, find your craving, and satisfy it!</span>
+              </div>
+              <img src="../../../img/section_title_chefs_all_shadow.png" style={styles.chefIconStyle} />
             </div>
           </div>
         </div>
@@ -50,6 +50,46 @@ class SearchResults extends React.Component {
 }
 
 const styles = {
+    chefIconStyle: {
+        position: 'absolute',
+        bottom: '0',
+        right: '0',
+        width: '70vmin'
+    },
+    titleContainerStyle: {
+        position: 'absolute',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '2vmin',
+        top: '-12vmin',
+        left: '5vmin',
+        borderRadius: '50%',
+        backgroundColor: '#ed9421',
+        width: '40vmin',
+        height: '40vmin'
+    },
+    titleContainerSmallStyle: {
+        position: 'absolute',
+        top: '-10vmin',
+        left: '35vmin',
+        borderRadius: '50%',
+        backgroundColor: '#edba1f',
+        width: '30vmin',
+        height: '30vmin'
+    },
+    headerTransparentStyle: {
+        boxShadow: '0 10px 20px rgba(0,0,0,0), 0 6px 6px rgba(0,0,0,0)',
+        background: 'transparent',
+        minHeight: '200px',
+        // display: 'flex',
+        // justifyContent: 'center',
+        // alignItems: 'center',
+        marginTop: '15px',
+        border: '0',
+        borderRadius: '0'
+    },
+
   headerStyle: {
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     height: '250px',
@@ -57,7 +97,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '15px',
-      borderRadius: '0'
+    border: '15px solid #edba1f',
+    borderRadius: '0'
   }
 };
 
