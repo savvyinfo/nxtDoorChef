@@ -79,7 +79,7 @@ class Chef extends React.Component {
       return (
         <div style={{padding:'0', border: '0', backgroundColor: 'transparent', minWidth: '100%'}}>
           <h2 className="subSubTitle">{review.user_name}</h2>
-          <h2 className="subSubTitle tooDarkGray-font">(Rate: <i>{review.rating} / 5</i>)</h2>
+          <h2 className="subSubTitle tooDarkGray-font"><b>(Rate: <i>{review.rating} / 5</i>)</b></h2>
           <span className="mainText">{review.body}</span>
           <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>
         </div>
