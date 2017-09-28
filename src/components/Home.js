@@ -15,7 +15,10 @@ class Home extends React.Component {
                   <div style={styles.headerTransparentStyle}>
                       <img src="../../../img/section_title_home_big_shadow.png" style={styles.homeIconStyle}/>
                       <div style={styles.titleContainerStyle}>
-                          <span className="headTitle">A Taste of Home</span>
+                          <span className="subTitle text-center">
+                              <span className="headTitle ">A Taste of Home</span><br />
+                                Take a trip to your city's largest neighborhood eatery today.
+                          </span>
                       </div>
                   </div>
               </div>
@@ -63,8 +66,8 @@ class Home extends React.Component {
                         <span className="mainText white-font text-center">
                             Simply enter the type of food you'd like to eat in the search bar,
                             see who's cooking around you, find your craving, and satisfy it.
-                            Take a trip to your city's largest neighborhood eatery today.
-                            And the best part is... it's just right next door!
+
+                            {/*And the best part is... it's just<br /> right next door!*/}
                         </span>
                     </div>
 
@@ -153,16 +156,16 @@ const styles = {
 
     titleContainerBigStyle: {
         position: 'absolute',
-        padding: '7vmin',
+        padding: '6vmin',
         marginTop: '-1vmin',
         marginLeft: '30vmin',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '50%',
-        backgroundColor: '#ff908f',
-        width: '45vmin',
-        height: '45vmin'
+        backgroundColor: '#d85856',
+        width: '40vmin',
+        height: '40vmin'
     },
 
     headerTransparentStyle: {

@@ -19,10 +19,12 @@ class Chef extends React.Component {
       return (
         <div
           className="list-group-item"
-          style={{padding: '10px', border: '0', borderRadius: '0', backgroundColor: 'transparent'}}
+          style={{padding: '1.25rem 1.25rem 0 1.25rem', border: '0', borderRadius: '0', backgroundColor: 'transparent'}}
         >
-          <span className="subTitle">{item.item_name}</span>
-          <span className="see_more_btn_container" onClick={() => this.props.history.push(`/chef-id/${item.chef_id}/food-id/${item.menu_item_number}`)}>
+          <span className="mainText" style={{marginBottom: '1.25rem'}}>{item.item_name}</span>
+          <span className="see_menu_btn_container"
+                onClick={() => this.props.history.push(`/chef-id/${item.chef_id}/food-id/${item.menu_item_number}`)}
+          >
               <span className="button_title">SEE</span>
           </span>
           <div style={{width: '100%', height: '1px', backgroundColor: '#fff'}}> </div>
@@ -160,9 +162,9 @@ const styles = {
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     marginTop: '15px',
     // minHeight: '250px',
-      width: '100%',
+    width: '100%',
     border: '15px solid #edba1f',
-      backgroundColor: '#ed9421',
+    backgroundColor: '#ed9421',
     borderRadius: '0'
   },
     mapCardStyle: {

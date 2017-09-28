@@ -54,15 +54,11 @@ class Checkout extends React.Component {
                 <img className="card-img" src={food ? food.photo : ''} alt="picture of selected dish" style={styles.cardImageStyle}/>
               </div>
               <div className="card-img-overlay">
-                  {/*<h4 className="foodTitle card-inverse"*/}
-                      {/*style={{position: 'relative', top: '15%', textAlign: 'center'}}*/}
-                  {/*>*/}
-                      {/*{food ? food.item_name : ''}*/}
-                  {/*</h4>*/}
                   <div className="price_btn_container"
                        style={{position: 'absolute', left: '35%'}}
                   >
-                    <span className="priceNum">${food ? food.price : ''}</span>
+                    <h6 className="text-center subSubTitle" style={{display: 'block', marginTop: '1.25vmin', marginBottom: '.1vmin'}}>COST:</h6>
+                    <span className="priceNum" style={{display: 'block'}}>${food ? food.price : ''}</span>
                   </div>
                   <div onClick={() => this.setState({ordered: !this.state.ordered})}
                        className="buy_btn_container burgundy-bg"
@@ -75,17 +71,17 @@ class Checkout extends React.Component {
           </div>
 
 
-          <div className="col-12 col-sm-6 col-md-3">
+          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
             <div className="card" style={styles.containerStyle}>
               <h4 className="text-center subTitle"><img src="../../../img/section_title_cooking.png" style={{marginBottom: '10px'}} /><br />DESCRIPTION</h4>
               <h6 className="text-center subSubTitle">COOKIN' TITLE:</h6>
-              <h6 className="text-center mainText">{food ? food.item_name : ''}</h6>
+              <h6 className="text-center nameTitle">{food ? food.item_name : ''}</h6>
               <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>
               <h6 className="text-center subSubTitle">COOKIN' DESCRIPTION:</h6>
               <h6 className="mainText text-center">{food ? food.description : ''}</h6>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-3">
+          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
             <div className="card" style={styles.containerStyle}>
               <h4 className="text-center subTitle"><img src="../../../img/section_title_cooking.png" style={{marginBottom: '10px'}} /><br />PICKUP INFO</h4>
               <h6 className="text-center subSubTitle">COST:</h6>

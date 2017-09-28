@@ -69,23 +69,23 @@ a:active {
     }
 }
 
-@media (min-width: 768px) {   /* md  iPad */
-    .sectionTitle {
-        font-size: 2.7vmin;
-    }
-}
+/*@media (min-width: 768px) {   !* md  iPad *!*/
+    /*.sectionTitle {*/
+        /*font-size: 2.7vmin;*/
+    /*}*/
+/*}*/
 
-@media (min-width: 992px) {  /* lg */
-    .sectionTitle {
-        font-size: 2.7vmin;
-    }
-}
+/*@media (min-width: 992px) {  !* lg *!*/
+    /*.sectionTitle {*/
+        /*font-size: 2.7vmin;*/
+    /*}*/
+/*}*/
 
-@media (min-width: 1024px) {  /* iPad pro */
-    .sectionTitle {
-        font-size: 2.7vmin;
-    }
-}
+/*@media (min-width: 1024px) {  !* iPad pro *!*/
+    /*.sectionTitle {*/
+        /*font-size: 2.7vmin;*/
+    /*}*/
+/*}*/
 
 @media (min-width: 1200px) { /* xl */
     .sectionTitle {
@@ -97,36 +97,112 @@ a:active {
 .subTitle {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
-    font-size: 2.7vmin;
     letter-spacing: 0.02em;
     color: #fff;
     padding-bottom: 1em;
 }
 
+@media (min-width: 375px) {    /* iPhone6 */
+    .subTitle {
+        font-size: 5vmin;
+    }
+}
+
+@media (min-width: 576px) {   /* sm */
+    .subTitle {
+        font-size: 2.7vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .subTitle {
+        font-size: 2.7vmin;
+    }
+}
+
+
 .subSubTitle {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
-    font-size: 1.8vmin;
     letter-spacing: 0.02em;
     color: #fff;
+}
+
+@media (min-width: 375px) {    /* iPhone6 */
+    .subSubTitle {
+        font-size: 2.7vmin;
+    }
+}
+
+@media (min-width: 576px) {   /* sm */
+    .subSubTitle {
+        font-size: 1.8vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .subSubTitle {
+        font-size: 1.8vmin;
+    }
 }
 
 .nameTitle {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
-    font-size: 3.2vmin;
     line-height: 3.5vmin;
     letter-spacing: 0.02em;
+}
+
+@media (min-width: 375px) {    /* iPhone6 */
+    .nameTitle {
+        font-size: 5.5vmin;
+        line-height: 6.7vmin;
+    }
+}
+
+@media (min-width: 576px) {   /* sm */
+    .nameTitle {
+        font-size: 3.2vmin;
+        line-height: 3.8vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .nameTitle {
+        font-size: 3.2vmin;
+        line-height: 3.8vmin;
+    }
 }
 
 .kitchenTitle {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
-    font-size: 2.7vmin;
     line-height: 3vmin;
     letter-spacing: 0.02em;
     color: #fff;
 }
+
+@media (min-width: 375px) {    /* iPhone6 */
+    .kitchenTitle {
+        font-size: 5vmin;
+        line-height: 6.2vmin;
+    }
+}
+
+@media (min-width: 576px) {   /* sm */
+    .kitchenTitle {
+        font-size: 2.7vmin;
+        line-height: 3.2vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .kitchenTitle {
+        font-size: 2.7vmin;
+        line-height: 3.2vmin;
+    }
+}
+
 
 .foodTitle {
     font-family: 'Roboto Condensed', sans-serif;
@@ -150,12 +226,29 @@ a:active {
 .mainText {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 2.2vmin;
-    line-height: 3vmin;
     letter-spacing: 0.01em;
 }
 
+@media (min-width: 375px) {    /* iPhone6 */
+    .mainText {
+        font-size: 3.2vmin;
+        line-height: 3.8vmin;
+    }
+}
 
+@media (min-width: 576px) {   /* sm */
+    .mainText {
+        font-size: 2.2vmin;
+        line-height: 3vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .mainText {
+        font-size: 2.2vmin;
+        line-height: 3vmin;
+    }
+}
 
 
 
@@ -209,6 +302,7 @@ a:active {
 /************ Buttons for Both Sections *************/
 
 .see_btn_container,
+.see_menu_btn_container,
 .see_other_btn_container,
 .see_more_btn_container,
 .buy_btn_container,
@@ -230,6 +324,28 @@ a:active {
     bottom: 2vmin;
 }
 
+.see_menu_btn_container {
+    right: 1.25rem;
+}
+
+@media (min-width: 375px) {    /* iPhone6 */
+    .see_menu_btn_container {
+        bottom: 2vmin;
+    }
+}
+
+@media (min-width: 576px) {   /* sm */
+    .see_menu_btn_container {
+        bottom: 1vmin;
+    }
+}
+
+@media (min-width: 1200px) { /* xl */
+    .see_menu_btn_container {
+        bottom: 1vmin;
+    }
+}
+
 .see_more_btn_container {
     bottom: 0;
     position: absolute;
@@ -246,6 +362,8 @@ a:active {
 
 .see_btn_container:hover,
 .see_btn_container:focus,
+.see_menu_btn_container:hover,
+.see_menu_btn_container:focus,
 .see_other_btn_container:hover,
 .see_other_btn_container:focus,
 .see_more_btn_container:hover,
@@ -432,12 +550,20 @@ input[type="text"]:focus:-moz-placeholder { /* Firefox 4 - 18 */
     color: #ed9421; /* RGB (237, 148, 33) */
 }
 
+.orangeLight-font {
+    color: #edba1f;  /* RGB (237, 186, 31) */
+}
+
 .white-font {
     color: #ffffff;
 }
 
 .burgundy-font {
     color: #d85856; /* RGB (217, 88, 86) */
+}
+
+.burgundyLight-font {
+    color: #ff908f; /* RGB (246, 144, 104) */
 }
 
 .green-font {
