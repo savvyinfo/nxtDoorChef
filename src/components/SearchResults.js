@@ -35,7 +35,7 @@ class SearchResults extends React.Component {
               <div style={styles.titleContainerSmallStyle}>
               </div>
               <div style={styles.titleContainerStyle}>
-                <span className="subTitle text-center"><span className="headTitle">CHEFS NEARBY</span><br />See who's cooking around you, find your craving, and satisfy it!</span>
+                <span className="mainText text-center white-font"><span className="headTitle">CHEFS NEARBY</span><br />See who's cooking around you, find your craving, and satisfy it!</span>
               </div>
               <img src="../../../img/section_title_chefs_all_shadow.png" style={styles.chefIconStyle} />
             </div>

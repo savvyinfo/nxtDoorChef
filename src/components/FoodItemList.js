@@ -34,7 +34,7 @@ class FoodItemList extends React.Component {
               <div style={styles.titleContainerSmallStyle}>
               </div>
               <div style={styles.titleContainerStyle}>
-                <span className="subTitle text-center"><span className="headTitle">COOKIN' NEARBY</span><br />Simply choose the type of food you'd like to eat, and enjoy it!</span>
+                <span className="mainText text-center white-font"><span className="headTitle">COOKIN' NEARBY</span><br />Simply choose the type of food you'd like to eat, and enjoy it!</span>
               </div>
 
               <img src="../../../img/section_title_cooking_all_shadow.png" style={styles.chefIconStyle} />

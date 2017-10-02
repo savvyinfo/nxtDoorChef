@@ -15,7 +15,7 @@ class Home extends React.Component {
                   <div style={styles.headerTransparentStyle}>
                       <img src="../../../img/section_title_home_big_shadow.png" style={styles.homeIconStyle}/>
                       <div style={styles.titleContainerStyle}>
-                          <span className="subTitle text-center">
+                          <span className="mainText text-center white-font">
                               <span className="headTitle ">A Taste of Home</span><br />
                                 Take a trip to your city's largest neighborhood eatery today.
                           </span>
@@ -41,7 +41,7 @@ class Home extends React.Component {
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.chefContainerStyle}>
                       <div className="card-block map_back_01" style={styles.chefHeaderStyle}>
-                          <h3>Map placeholder</h3>
+                          {/*<h3>Map placeholder</h3>*/}
                       </div>
                   </div>
               </div>
