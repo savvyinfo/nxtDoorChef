@@ -93,15 +93,16 @@ class Chef extends React.Component {
             <div>
               <Navbar />
               <div className="row">
-                <div className="col-xs-12 col-md-12 col-lg-6">
-                  <div className="card" style={styles.cardStyle}>
-                    <span className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />MENU</span>
-                    <div className="list-group" style={{border: '0'}}>
-                        {this.renderMenu()}
-                    </div>
 
+                  <div className="col-xs-12 col-md-12 col-lg-6">
+                      <div className="card" style={styles.cardMenuStyle}>
+                        <span className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />MENU</span>
+                        <div className="list-group" style={{border: '0'}}>
+                            {this.renderMenu()}
+                        </div>
+                      </div>
                   </div>
-                </div>
+
                 <div className="col-xs-12 col-md-12 col-lg-6">
                   <div className="card" style={styles.mapCardStyle}>
                     <Map
@@ -114,14 +115,17 @@ class Chef extends React.Component {
 
               <div className="row">
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                  <div className="card" style={styles.cardStyle}>
+                  <div className="card" style={styles.cardPhotoStyle}>
                       {/*<h2 className="card-img-overlay text-center subTitle"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />CHEF</h2>*/}
                     <div style={{overflow: 'hidden'}}>
                       <img className="card-img img-responsive" src={this.props.chef.portrait} alt="picture of chef" style={styles.cardImageStyle} />
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+
+                  {/* xs hidden, others shown */}
+
+                <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
                     <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
                     <div className="card-block">
@@ -136,7 +140,29 @@ class Chef extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+
+                  {/* xs shown, others hidden */}
+
+                  <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                      <div className="card" style={styles.cardOtherStyle}>
+                          <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
+                          <div className="card-block">
+                              <h6 className="text-center subSubTitle">CHEF NAME</h6>
+                              <h5 className="text-center nameTitle">{this.props.chef.firstName} {this.props.chef.lastName}</h5>
+                              <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>
+                              <h6 className="text-center subSubTitle">KITCHEN NAME</h6>
+                              <h5 className="text-center nameTitle">{this.props.chef.alias}</h5>
+                              <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>
+                              <h6 className="text-center subSubTitle">FOODTYPE</h6>
+                              <h5 className="text-center nameTitle">{this.props.chef.foodType}</h5>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  {/* xs hidden, others shown */}
+
+                <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
                     <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />HOURS</h2>
                     <div className="card-block">
@@ -144,7 +170,21 @@ class Chef extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+
+                  {/* xs shown, others hidden */}
+
+                  <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                      <div className="card" style={styles.cardOtherStyle}>
+                          <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />HOURS</h2>
+                          <div className="card-block">
+                              {this.renderHours()}
+                          </div>
+                      </div>
+                  </div>
+
+                  {/* xs hidden, others shown */}
+
+                <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
                     <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
                     <div className="card-block" style={{padding:'0'}}>
@@ -154,6 +194,20 @@ class Chef extends React.Component {
                     </div>
                   </div>
                 </div>
+
+                  {/* xs shown, others hidden */}
+
+                  <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                      <div className="card" style={styles.cardOtherStyle}>
+                          <h2 className="text-center subTitle margin_top_20"><img src="../../../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
+                          <div className="card-block" style={{padding:'0'}}>
+                              <div className="list-group" style={{padding:'15px', minWidth: '100%'}}>
+                                  {this.renderReviews()}
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
               </div>
             </div>
         );
@@ -164,12 +218,38 @@ const styles = {
     cardStyle: {
         boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
         marginTop: '15px',
-        // minHeight: '250px',
+        maxHeight: '250px',
+        overflow: 'auto',
         width: '100%',
         border: '15px solid #edba1f',
         backgroundColor: '#ed9421',
         borderRadius: '0'
     },
+    cardOtherStyle: {
+        boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+        marginTop: '15px',
+        width: '100%',
+        border: '15px solid #edba1f',
+        backgroundColor: '#ed9421',
+        borderRadius: '0'
+    },
+    cardMenuStyle: {
+        boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+        marginTop: '15px',
+        width: '100%',
+        border: '15px solid #edba1f',
+        backgroundColor: '#ed9421',
+        borderRadius: '0'
+    },
+    cardPhotoStyle: {
+        boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+        marginTop: '15px',
+        width: '100%',
+        border: '15px solid #edba1f',
+        backgroundColor: '#ed9421',
+        borderRadius: '0'
+    },
+
     mapCardStyle: {
         boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
         marginTop: '15px',

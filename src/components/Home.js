@@ -20,8 +20,8 @@ class Home extends React.Component {
                         <div style={styles.headerTransparentStyle}>
                             <img src="../../../img/section_title_home_big_shadow.png" style={styles.homeIconStyle}/>
                             <div style={styles.titleContainerStyle}>
-                    <span className="subTitle text-center">
-                      <span className="headTitle ">A Taste of Home</span><br />
+                    <span className="mainText text-center white-font">
+                      <span className="headTitle">A Taste of Home</span><br />
                         Take a trip to your city's largest neighborhood eatery today.
                     </span>
                             </div>
