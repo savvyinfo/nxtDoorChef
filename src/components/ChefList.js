@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {getChefs} from '../actions';
 import Card from './functional/ChefCard';
 import Navbar from './functional/Navbar';
+import titleChefAllShadow from '../assets/imgs/section_title_chefs_all_shadow.png';
 
 class ChefList extends React.Component {
 
@@ -35,7 +36,7 @@ class ChefList extends React.Component {
               <div style={styles.titleContainerStyle}>
                 <span className="mainText text-center white-font"><span className="headTitle">CHEFS NEARBY</span><br />See who's cooking around you, find your craving, and satisfy it!</span>
               </div>
-              <img src="../../../img/section_title_chefs_all_shadow.png" style={styles.chefIconStyle} />
+              <img src={titleChefAllShadow} style={styles.chefIconStyle} />
             </div>
           </div>
 

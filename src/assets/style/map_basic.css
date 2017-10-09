@@ -3,13 +3,13 @@
 /* Map Back Images*/
 
 .map_back_01 {
-    background : url(../img/map06_outspoken.png) no-repeat;
+    background : url(../imgs/map06_outspoken.png) no-repeat;
     background-position: left center;
     background-size: cover;
 }
 
 .map_back_02 {
-    background : url(../img/map06_outspoken.png) no-repeat;
+    background : url(../imgs/map06_outspoken.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }

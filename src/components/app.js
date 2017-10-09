@@ -12,13 +12,13 @@ import FoodItemList from './FoodItemList';
 import Checkout from './Checkout';
 import SearchResults from './SearchResults';
 
-import '../style/basic.css';
-import '../style/checkout_basic.css';
-import '../style/chef_basic.css';
-import '../style/cooking_basic.css';
-import '../style/map_basic.css';
-import '../style/pg1_landing_1.css';
-import '../style/style.css';
+import '../assets/style/basic.css';
+import '../assets/style/checkout_basic.css';
+import '../assets/style/chef_basic.css';
+import '../assets/style/cooking_basic.css';
+import '../assets/style/map_basic.css';
+import '../assets/style/pg1_landing_1.css';
+import '../assets/style/style.css';
 
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);

@@ -77,13 +77,13 @@ input[type="text"]:focus:-moz-placeholder { /* Firefox 4 - 18 */
 
 
 .checkout_pickup_bg {
-    background : url(../img/checkout_pickup.png) no-repeat;
+    background : url(../imgs/checkout_pickup.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 .checkout_confirm_bg {
-    background : url(../img/section_title_chefs.png) no-repeat;
+    background : url(../imgs/section_title_chefs.png) no-repeat;
     background-position: center center;
     background-size: 30%;
 }

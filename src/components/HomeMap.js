@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getChefs} from '../actions';
+import titleChefs from '../assets/imgs/section_title_chefs_map_sm.png';
 
 class GoogleMap extends React.Component {
     componentDidUpdate() {
@@ -298,7 +299,7 @@ class GoogleMap extends React.Component {
                 new google.maps.Marker({
                     position: {lat: item.lat, lng: item.lng},
                     map: map,
-                    icon: '../img/section_title_chefs_map_sm.png',
+                    icon: titleChefs
                 });
             });
         };

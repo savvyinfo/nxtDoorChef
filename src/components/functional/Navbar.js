@@ -1,5 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import logoRevised from '../../assets/imgs/nxtDoorChef-revised.png';
+import buttonHomeIcon from '../../assets/imgs/section_title_home.png';
+import buttonCookingIcon from '../../assets/imgs/section_title_cooking.png';
+import buttonChefsIcon from '../../assets/imgs/section_title_chefs.png';
 
 export default () => {
   return (
@@ -10,23 +14,23 @@ export default () => {
 
           <div className="col">
               <Link to="/">
-                <img src="../img/nxtDoorChef-revised.png" style={styles.logoSymbol} />
+                <img src={logoRevised} style={styles.logoSymbol} />
               </Link>
           </div>
           <div className="col">
               <Link to="/">
                   <span className="nav_home_container burgundy-bg">
-                    <img src="../img/section_title_home.png" className="nav_home" />
+                    <img src={buttonHomeIcon} className="nav_home" />
                   </span>
               </Link>
               <Link to="/results/foods">
                     <span className="nav_cooking_container green-bg">
-                      <img src="../img/section_title_cooking.png" className="nav_cooking" />
+                      <img src={buttonCookingIcon} className="nav_cooking" />
                     </span>
               </Link>
               <Link to="/results/chefs">
                       <span className="nav_chef_container orange-bg">
-                        <img src="../img/section_title_chefs.png" className="nav_chef" />
+                        <img src={buttonChefsIcon} className="nav_chef" />
                       </span>
               </Link>
           </div>

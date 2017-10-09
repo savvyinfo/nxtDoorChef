@@ -2,6 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {displaySelectedChef, getMenu} from '../actions';
 import Navbar from './functional/Navbar';
+import titleCheckout from '../assets/imgs/section_title_checkout.png';
+import titleCooking from '../assets/imgs/section_title_cooking.png';
 
 class Checkout extends React.Component {
   state = {ordered: false};
@@ -24,7 +26,7 @@ class Checkout extends React.Component {
       return (
           <div className="col-xs-12 col-md-12 col-lg-6">
           <div className="card" style={styles.buyContainerStyle}>
-            <h4 className="text-center subTitle"><img src="../img/section_title_checkout.png" style={{marginBottom: '10px'}} /><br />CUSTOMER INFO</h4>
+            <h4 className="text-center subTitle"><img src={titleCheckout} style={{marginBottom: '10px'}} /><br />CUSTOMER INFO</h4>
             <form>
               <div className="form-group">
                 <input type="text" className="form-control burgundyLight-bg inputwords" style={styles.searchInputStyle} placeholder="Enter Name"/>
@@ -73,7 +75,7 @@ class Checkout extends React.Component {
 
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
             <div className="card" style={styles.containerStyle}>
-              <h4 className="text-center subTitle"><img src="../img/section_title_cooking.png" style={{marginBottom: '10px'}} /><br />DESCRIPTION</h4>
+              <h4 className="text-center subTitle"><img src={titleCooking} style={{marginBottom: '10px'}} /><br />DESCRIPTION</h4>
               <h6 className="text-center subSubTitle">COOKIN' TITLE:</h6>
               <h6 className="text-center nameTitle">{food ? food.item_name : ''}</h6>
               <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>
@@ -83,7 +85,7 @@ class Checkout extends React.Component {
           </div>
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
             <div className="card" style={styles.containerStyle}>
-              <h4 className="text-center subTitle"><img src="../img/section_title_cooking.png" style={{marginBottom: '10px'}} /><br />PICKUP INFO</h4>
+              <h4 className="text-center subTitle"><img src={titleCooking} style={{marginBottom: '10px'}} /><br />PICKUP INFO</h4>
               <h6 className="text-center subSubTitle">COST:</h6>
               <h5 className="text-center mainText">${food ? food.price : ''}</h5>
               <div style={{width: '100%', height: '1px', backgroundColor: '#fff', marginTop: '10px', marginBottom: '15px'}}> </div>

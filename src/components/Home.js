@@ -4,6 +4,9 @@ import Card from './functional/HomeCard';
 import {searchInput, getChefs} from '../actions';
 import Navbar from './functional/Navbar';
 import Map from './HomeMap';
+import titleHomeBigShadow from '../assets/imgs/section_title_home_big_shadow.png';
+import titleSectionChefs from '../assets/imgs/section_title_chefs.png';
+import titleSectionCooking from '../assets/imgs/section_title_cooking.png';
 
 class Home extends React.Component {
 
@@ -18,7 +21,7 @@ class Home extends React.Component {
                 <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div style={styles.headerTransparentStyle}>
-                            <img src="../img/section_title_home_big_shadow.png" style={styles.homeIconStyle}/>
+                            <img src={titleHomeBigShadow} style={styles.homeIconStyle}/>
                             <div style={styles.titleContainerStyle}>
                     <span className="mainText text-center white-font">
                       <span className="headTitle">A Taste of Home</span><br />
@@ -30,7 +33,7 @@ class Home extends React.Component {
                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-3">
                         <div className="card" style={styles.chefContainerStyle}>
                             <div className="card-block" style={styles.chefHeaderStyle}>
-                                <img src="../img/section_title_chefs.png" className="chef-icon" />
+                                <img src={titleSectionChefs} className="chef-icon" />
                                 <Card
                                     title="CHEFS NEARBY"
                                     action="SEE ALL"
@@ -58,7 +61,7 @@ class Home extends React.Component {
                                 </div>
                                 <div style={styles.basketMiddleStyle}>
                                 </div>
-                                <div style={styles.basketBottomStyle}>
+                                <div style={styles.basketBottomStyle} className="basketBottom">
                                 </div>
                             </div>
 
@@ -80,7 +83,7 @@ class Home extends React.Component {
                         <div className="card" style={styles.cookingContainerStyle}>
                             <div className="card-block" style={styles.cookingHeaderStyle}>
 
-                                <img src="../img/section_title_cooking.png" className="chef-icon" />
+                                <img src={titleSectionCooking} className="chef-icon" />
 
                                 <Card
                                     title="COOKIN' NEARBY"
@@ -95,7 +98,7 @@ class Home extends React.Component {
                         <div className="card" style={styles.cookingContainerStyle}>
                             <div className="card-block" style={styles.cookingHeaderStyle}>
 
-                                <img src="../img/section_title_cooking.png" className="chef-icon" />
+                                <img src={titleSectionCooking} className="chef-icon" />
 
                                 <form>
                                     <div className="form-group">
@@ -202,7 +205,7 @@ const styles = {
         height: '3vmin'
     },
     basketBottomStyle: {
-        background : 'url(../img/pattern_checkout_2.png)',
+        // background : 'url(../assets/imgs/pattern_checkout_2.png)',
         backgroundRepeat: 'repeat',
         backgroundSize: '4vmin',
         position: 'absolute',

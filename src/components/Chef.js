@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {displaySelectedChef, getMenu, getHours, getReviews} from '../actions';
 import Navbar from './functional/Navbar';
 import Map from './ChefMap';
+import titleChefs from '../assets/imgs/section_title_chefs.png';
+
 
 class Chef extends React.Component {
 
@@ -96,7 +98,7 @@ class Chef extends React.Component {
 
                   <div className="col-xs-12 col-md-12 col-lg-6">
                       <div className="card" style={styles.cardMenuStyle}>
-                        <span className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />MENU</span>
+                        <span className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />MENU</span>
                         <div className="list-group" style={{border: '0'}}>
                             {this.renderMenu()}
                         </div>
@@ -127,7 +129,7 @@ class Chef extends React.Component {
 
                 <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
-                    <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
+                    <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
                     <div className="card-block">
                       <h6 className="text-center subSubTitle">CHEF NAME</h6>
                       <h5 className="text-center nameTitle">{this.props.chef.firstName} {this.props.chef.lastName}</h5>
@@ -145,7 +147,7 @@ class Chef extends React.Component {
 
                   <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
                       <div className="card" style={styles.cardOtherStyle}>
-                          <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
+                          <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />CHEF INFO</h2>
                           <div className="card-block">
                               <h6 className="text-center subSubTitle">CHEF NAME</h6>
                               <h5 className="text-center nameTitle">{this.props.chef.firstName} {this.props.chef.lastName}</h5>
@@ -164,7 +166,7 @@ class Chef extends React.Component {
 
                 <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
-                    <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />HOURS</h2>
+                    <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />HOURS</h2>
                     <div className="card-block">
                         {this.renderHours()}
                     </div>
@@ -175,7 +177,7 @@ class Chef extends React.Component {
 
                   <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
                       <div className="card" style={styles.cardOtherStyle}>
-                          <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />HOURS</h2>
+                          <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />HOURS</h2>
                           <div className="card-block">
                               {this.renderHours()}
                           </div>
@@ -186,7 +188,7 @@ class Chef extends React.Component {
 
                 <div className="hidden-xs-down col-xs-6 col-sm-6 col-md-6 col-lg-3">
                   <div className="card" style={styles.cardStyle}>
-                    <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
+                    <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
                     <div className="card-block" style={{padding:'0'}}>
                       <div className="list-group" style={{padding:'15px', minWidth: '100%'}}>
                           {this.renderReviews()}
@@ -199,7 +201,7 @@ class Chef extends React.Component {
 
                   <div className="hidden-sm-up col-xs-6 col-sm-6 col-md-6 col-lg-3">
                       <div className="card" style={styles.cardOtherStyle}>
-                          <h2 className="text-center subTitle margin_top_20"><img src="../img/section_title_chefs.png" style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
+                          <h2 className="text-center subTitle margin_top_20"><img src={titleChefs} style={{marginBottom: '10px'}} /><br />REVIEWS</h2>
                           <div className="card-block" style={{padding:'0'}}>
                               <div className="list-group" style={{padding:'15px', minWidth: '100%'}}>
                                   {this.renderReviews()}

@@ -1,4 +1,5 @@
 import React from 'react';
+import sectionTitleChefs from '../../assets/imgs/section_title_chefs.png';
 
 export default (props) => {
   return (
@@ -7,13 +8,16 @@ export default (props) => {
     <div className="card" style={styles.containerStyle}>
         <div style={styles.contentStyle}>
             <div style={styles.contentTopStyle}>
-                <img src="../img/section_title_chefs.png" className="margin_bottom_10" />
+                <img src={sectionTitleChefs} className="margin_bottom_10" />
                 <div className="kitchenTitle">{props.restaurant}</div>
                 <div className="mainText">by</div>
                 <div className="nameTitle">{props.chef}</div>
             </div>
 
-            <div className="see_other_btn_container" onClick={props.onClick}>
+            <div
+                className="see_other_btn_container"
+                onClick={props.onClick}
+            >
                 <span className="button_title">SEE</span>
             </div>
         </div>

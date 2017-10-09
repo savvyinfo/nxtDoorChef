@@ -1,7 +1,7 @@
 
 body{
 
-    background : url(../img/pattern_chef_2.png) no-repeat;
+    background : url(../imgs/pattern_chef_2.png) no-repeat;
     background-repeat: repeat;
     background-size: 5vmin;
     width:100%;
@@ -290,12 +290,10 @@ a:active {
     left: 17%;
 }
 
-/* Map Back Images*/
+/* Checkout Basket */
 
-.map_back_01 {
-    background : url(../img/map06_outspoken.png) no-repeat;
-    background-position: left center;
-    background-size: cover;
+.basketBottom {
+    background : url(../imgs/pattern_checkout_2.png);
 }
 
 

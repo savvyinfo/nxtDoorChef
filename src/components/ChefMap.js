@@ -1,4 +1,5 @@
 import React from 'react';
+import titleChef from '../assets/imgs/section_title_chefs_map.png';
 
 class GoogleMap extends React.Component {
     componentDidUpdate() {
@@ -291,7 +292,7 @@ class GoogleMap extends React.Component {
         let marker = new google.maps.Marker({
             position: {lat: this.props.lat, lng: this.props.lng},
             map: map,
-            icon: '../img/section_title_chefs_map.png'
+            icon: titleChef
         });
 
         marker.setMap(map);

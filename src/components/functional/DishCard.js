@@ -1,4 +1,5 @@
 import React from 'react';
+import sectionTitleCooking from '../../assets/imgs/section_title_cooking.png';
 
 export default (props) => {
   return (
@@ -7,7 +8,7 @@ export default (props) => {
         <img className="card-img" src={props.photo} alt="picture of food" style={styles.cardImageStyle}/>
         <div className="card-img-overlay">
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <img src="../img/section_title_cooking.png" className="margin_bottom_10" />
+                <img src={sectionTitleCooking} className="margin_bottom_10" />
             </div>
             <div>
                 <h5 className="kitchenTitle text-center">{props.name}</h5>
@@ -17,7 +18,7 @@ export default (props) => {
             className="see_other_btn_container"
             style={{left: '50%', marginLeft: '-3.5vmin'}}
             >
-            <span className="button_title">ORDER</span>
+                <span className="button_title">SEE</span>
             </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import Card from './functional/DishCard';
 import {getFoodItems} from '../actions';
 import Navbar from './functional/Navbar';
+import titleCookingAllShadow from '../assets/imgs/section_title_cooking_all_shadow.png';
 
 class FoodItemList extends React.Component {
 
@@ -37,7 +38,7 @@ class FoodItemList extends React.Component {
                 <span className="mainText text-center white-font"><span className="headTitle">COOKIN' NEARBY</span><br />Simply choose the type of food you'd like to eat, and enjoy it!</span>
               </div>
 
-              <img src="../img/section_title_cooking_all_shadow.png" style={styles.chefIconStyle} />
+              <img src={titleCookingAllShadow} style={styles.chefIconStyle} />
 
             </div>
           </div>
