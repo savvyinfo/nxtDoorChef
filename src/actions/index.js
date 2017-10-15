@@ -80,7 +80,6 @@ export const searchInput = (text) => {
 };
 
 export const foodSearch = (food) => {
-<<<<<<< HEAD
     const search = axios.get(`https://nxtdoorchef.com/api/menu/search/${food}`)
         .then(resp => resp.data.data);
 
@@ -88,15 +87,6 @@ export const foodSearch = (food) => {
         type: SEARCH_RESULT,
         payload: search
     };
-=======
-  const search = axios.get(`https://nxtdoorchef.com/api/menu/search/${food}`)
-    .then(resp => resp.data.data);
-
-  return {
-    type: SEARCH_RESULT,
-    payload: search
-  };
->>>>>>> cd4b8847f579e727c7c0d492b23eda3b07e68535
 };
 
 export const nameInput = (name) => {
