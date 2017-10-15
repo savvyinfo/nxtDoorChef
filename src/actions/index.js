@@ -8,6 +8,9 @@ export const HOURS = 'HOURS';
 export const REVIEWS = 'REVIEWS';
 export const SEARCH = 'SEARCH';
 export const SEARCH_RESULT = 'SEARCH_RESULT';
+export const EMAIL = 'EMAIL';
+export const NAME = 'NAME';
+export const SUBMIT = 'SUBMIT';
 
 export const getChefs = () => {
   const chefs = axios.get('https://nxtdoorchef.com/api/chef')
@@ -84,4 +87,29 @@ export const foodSearch = (food) => {
     type: SEARCH_RESULT,
     payload: search
   };
+};
+
+export const nameInput = (name) => {
+    return {type: NAME, payload: name};
+};
+
+export const emailInput = (email) => {
+    return {type: EMAIL, payload: email};
+};
+
+export const submit = (email, name, photo, price, meal, address, chef) => {
+    console.log('clicked');
+    const submit = axios.post('https://nxtdoorchef.com/api/email/confirmation', {
+        email: email,
+        user: name,
+        purchase_photo: photo,
+        purchase_price: price,
+        purchase_name: meal,
+        chef_address: address,
+        chef_name: chef
+    })
+        .then(() => 'success')
+        .catch(() => 'error');
+
+    return {type: SUBMIT, payload: submit};
 };
